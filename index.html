@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+      <!-- Meta Tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Stylesheet, Favicon and Google Fonts -->
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+      <!-- FontAwesome Kit -->
+      <script src="https://kit.fontawesome.com/03b52d41ee.js" crossorigin="anonymous"></script>
+      <!-- Title -->
+      <title>Calculator</title>
+   </head>
+
+   <body>
+      <div class="everything">
+         <h1>Calculator</h1>
+         <div class="calculator">
+            <i class="fas fa-2x fa-moon dark-mode-btn " id="dark-mode-btn"></i>
+            <!-- Output Bar and Clear Button Section -->
+            <div class="calc-head">
+               <input type="text" name="output" id="output" disabled>
+               <button class="c">C</button>
+            </div>
+            <!-- Calculator Body Section -->
+            <div class="calc-body">
+               <table>
+                  <tr>
+                     <td><button class="operation">(</button></td>
+                     <td><button class="operation">)</button></td>
+                     <td><button class="operation">%</button></td>
+                     <td><button class="operation">/</button></td>
+                  </tr>
+                  <tr>
+                     <td><button>1</button></td>
+                     <td><button>2</button></td>
+                     <td><button>3</button></td>
+                     <td><button class="operation">x</button></td>
+                  </tr>
+                  <tr>
+                     <td><button>4</button></td>
+                     <td><button>5</button></td>
+                     <td><button>6</button></td>
+                     <td><button class="operation">-</button></td>
+                  </tr>
+                  <tr>
+                     <td><button>7</button></td>
+                     <td><button>8</button></td>
+                     <td><button>9</button></td>
+                     <td><button class="operation">+</button></td>
+                  </tr>
+                  <tr>
+                     <td><button>0</button></td>
+                     <td><button>.</button></td>
+                     <td><button class="backspace-btn"><i class="fa-solid fa-delete-left"></i></button></td>
+                     <td><button class="equal">=</button></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <!-- Footer Section -->
+         <footer>
+            <em>&copy; Giorgi Nakhutsrishvili</em>
+         </footer>
+      </div>
+
+      <script src="index.js"></script>
+   </body>
+
+</html>

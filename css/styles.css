@@ -1,0 +1,153 @@
+body {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.everything {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.calculator {
+  background-color: #aac4ff;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.15s;
+}
+
+/* Dark Mode Button */
+
+.dark-mode-btn {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  transition: all 0.15s;
+}
+.dark-mode-btn:hover {
+  color: white;
+  cursor: pointer;
+}
+.dark-mode {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  background-attachment: fixed;
+  transition: all 0.15s;
+}
+.dark-mode .everything {
+  color: white;
+}
+.dark-mode h1 {
+  color: white;
+}
+.dark-mode .dark-mode-btn:hover {
+  color: black;
+}
+.dark-mode .everything .calculator {
+  color: white;
+  background-color: rgb(8, 0, 35);
+}
+.dark-mode .everything .calculator input {
+  color: white;
+  background-color: rgb(18, 0, 96);
+}
+.dark-mode .everything button {
+  background-color: #123e85;
+  color: white;
+}
+.dark-mode .everything .c {
+  background-color: #6e0422;
+}
+.dark-mode .everything .equal {
+  background-color: #003f24;
+}
+.dark-mode .everything .operation {
+  background-color: #0c123c;
+}
+
+/* Calculator Head */
+
+.calc-head {
+  vertical-align: top;
+  display: inline-block;
+}
+.c {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #ec7272;
+  color: black;
+}
+input {
+  width: 166px;
+  font-family: "Orbitron", sans-serif;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  font-size: 15px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+input:focus {
+  outline: none;
+}
+
+/* Buttons */
+
+button {
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 4px;
+  background-color: #eef1ff;
+  color: black;
+  transition: all 0.15s;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  cursor: unset;
+  opacity: 80%;
+}
+.pressed {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(95, 240, 232);
+}
+
+.equal {
+  background-color: #c3ff99;
+  color: black;
+}
+.operation {
+  background-color: #c1ccfa;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 5%;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
